@@ -55,15 +55,14 @@ void main() {
   .....
   */
 
-
   var myHash = GeoHash('9yf0zhhtj');
   print(myHash.geohash);
   print(myHash.longitude());
   print(myHash.longitude(decimalAccuracy: 4));
   print(myHash.latitude());
   print(myHash.latitude(decimalAccuracy: 4));
-  print(myHash.neighbors);
-  print(myHash.neighbor(Direction.NORTH));
+  print(myHash.neighborsByDirection);
+  print(myHash.neighborsByDirection[Direction.NORTH]);
 
   var myOtherHash = GeoHash.fromDecimalDegrees(-98.1235, 38.1234);
   print(myOtherHash.geohash);
@@ -71,7 +70,6 @@ void main() {
   print(myOtherHash.longitude(decimalAccuracy: 4));
   print(myOtherHash.latitude());
   print(myOtherHash.latitude(decimalAccuracy: 4));
-  print(myOtherHash.neighbors);
-  print(myOtherHash.neighbor(Direction.NORTH));
-
+  print(myOtherHash.neighborsByDirection);
+  print(myOtherHash.neighborsByDirection[Direction.NORTH]);
 }
