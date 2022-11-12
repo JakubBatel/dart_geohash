@@ -41,7 +41,7 @@ double getHeightForPrecision(int p) =>
     const [4992600.0, 624100.0, 156000.0, 19500.0, 4900.0, 609.4, 152.4, 19.0, 4.8, 0.595, 0.149, 0.0199][p - 1] / 2;
 
 // Generate geohashes based on radius in meters
-Set<String> createGeoHashes(double latitude, double longitude, double radius, int precision) {
+Set<String> createProximityGeoHashes(double latitude, double longitude, double radius, int precision) {
   if (precision > 12 || precision < 0) {
     throw ArgumentError('Invalid precision $precision (0 < precision <= 12 does not hold).');
   }

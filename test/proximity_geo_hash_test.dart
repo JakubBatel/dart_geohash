@@ -25,12 +25,12 @@ void main() {
   });
   group('create geohash tests', () {
     test('create geohash', () {
-      final geoHashes = createGeoHashes(48.858156, 2.294776, 100, 3);
+      final geoHashes = createProximityGeoHashes(48.858156, 2.294776, 100, 3);
       expect(geoHashes.length, 2);
       expect(geoHashes.containsAll(["u0d", "u09"]), true);
     });
     test('create multiple geohashes', () {
-      final geoHashes = createGeoHashes(43.649093099999995, -79.42056769999999, 4000, 5);
+      final geoHashes = createProximityGeoHashes(43.649093099999995, -79.42056769999999, 4000, 5);
       expect(geoHashes.length, 9);
       expect(geoHashes.contains("dpz83"), true);
     });
