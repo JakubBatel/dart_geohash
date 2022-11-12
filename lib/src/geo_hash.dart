@@ -1,5 +1,5 @@
 import 'package:dart_geohash/src/direction.dart';
-import 'package:dart_geohash/src/geohasher.dart';
+import 'package:dart_geohash/src/geo_hasher.dart';
 import 'package:dart_geohash/src/latlong.dart';
 
 /// A containing class for a geohash

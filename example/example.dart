@@ -1,4 +1,4 @@
-import 'package:dart_geohash/dart_geohash.dart';
+import 'package:dart_geohash/dart_geo_hash.dart';
 
 void main() {
   var geoHasher = GeoHasher();
